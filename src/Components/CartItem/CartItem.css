@@ -1,0 +1,118 @@
+.cartitems{
+    margin: 100px 170px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.CI-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.CI-Format{
+    font-size: 17px;
+    font-weight: 500s;
+}
+.CI-Product-icon{
+    height: 62px;
+}
+.removeIcon{
+    width:15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.CR-quantity{
+    width: 54px;
+    height: 40px;
+    background:  white;
+    border: 2px solid #ebebeb;
+}
+.cartitemsdown{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 150px;
+    gap: 40px;
+}
+.CR-total-item{
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 0px;
+}
+.CR-checkout{
+    width: 252px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media(max-width:1280px){
+    .cartitems{
+        margin: 60px 50px;
+    }
+    .CI-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+    }
+    .CI-Product-icon{
+        height: 48px;
+    }
+    .removeIcon{
+        margin: auto;
+    }
+    .CR-quantity{
+        width: 40px ;
+        height: 30px;
+    }
+    .cartitemsdown{
+        margin: 80px 0px;
+        flex-direction: column;
+        gap: 80px;
+    }
+    .cartitems-total{
+        margin: 100px;
+    }
+    .cartitems-total button{
+        max-width: 200px;
+        font-size: 13px;
+        height: 45px;
+    }
+}
+
+@media(max-width:500px){
+    .CI-format-main{
+       display: none; 
+       grid-template-columns:  0.5fr 3fr 0.5fr ;
+       gap: 10px;
+    }
+    .CI-Format{
+        display: grid;
+
+    }
+    .cartitems-total button{
+        margin-left: 15%;
+
+    }
+}
